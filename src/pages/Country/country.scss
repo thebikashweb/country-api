@@ -1,0 +1,59 @@
+@import '../../styles/base';
+
+.country-page{
+    box-shadow: 0px 6px 16px rgba(165, 155, 151, 0.19)!important;
+    margin:5rem auto 0 auto;
+    max-width: $max-width;
+    &__go-back{
+        padding:2rem 0;
+        display: flex;
+        justify-content: flex-start;
+        button{
+            max-width:200px!important;
+        }
+        span.MuiButton-label {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__details{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding:5rem;
+    }
+    &__details-left{
+        flex:1;
+        img{
+            max-width: 450px;
+            max-height:300px;
+        }
+    }
+    &__details-right{
+        flex:1;
+       
+    }
+    &__details-right-list{
+
+        display: flex;
+        justify-content: space-between;
+        margin-top:1rem;
+        h2{
+            text-align: left;
+        }
+        .right{           
+            margin-left:3rem;
+            color:$blackLight;
+        }
+    }
+    &__actions{
+        display: flex;
+        justify-content: flex-end;
+        button{
+            max-width:200px!important;
+        }
+       padding:2rem 2rem 5rem 0rem;
+    }
+}

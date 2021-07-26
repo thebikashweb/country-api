@@ -1,0 +1,56 @@
+@import '../../styles/base';
+
+.sidebar{
+&__drawer{
+    min-width: 250px;
+    .MuiDrawer-paperAnchorRight {
+        left: auto;
+        right: 0;
+        width: 250px;
+    }
+}
+&__drawer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top:2.5rem;
+    padding-right:5rem;
+    svg.MuiSvgIcon-root {
+        font-size: 5rem;
+        color:$black;
+        cursor: pointer;
+    }
+
+}
+&__navigation{
+    margin-top:2.5rem;
+    padding-right:1rem;
+    text-align: right;
+    ul{
+        margin-top:8rem;
+        li{
+            margin-bottom:5rem;
+            display: flex;
+            align-items: center;   
+            justify-content: flex-end;         
+        }
+
+.blue{
+    background-color: #3D89E9;
+}
+.green{
+    background-color: #23F0DC;
+}
+.red{
+    background-color: #F1622F;
+}
+    }
+}
+&__color-box{
+    width:80px;
+    height:50px;
+    margin-left:2rem;
+    
+}
+
+}

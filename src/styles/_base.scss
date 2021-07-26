@@ -1,0 +1,122 @@
+//consist all basic setup, colors and fonts
+@import './reset';
+
+//fonts 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+//functions
+@function weight($weight-name){
+    @return map-get($font-weights,$weight-name )
+};
+
+//font weight
+
+$font-weights:(
+    'regular':400,
+    'medium':500,
+    'bold':700
+);
+$font-family:'Poppins', sans-serif;
+
+// global
+$max-width:1040px;
+:root{
+    font-size:8px;
+    font-weight: weight(regular);
+    font-family: $font-family;
+    //colors
+    --primary-color:#3D89E9;
+    --primary-color-hover:#1F7AED;
+
+};
+.container{
+    max-width: $max-width;
+    margin:auto;
+}
+
+//all variables
+$primary:var(--primary-color);
+$primaryHover:var( --primary-color-hover);
+$black:#15181F;
+
+$grey:#F6F7F9;
+$mainWhite:#FFFFFF;
+$white:#DBFFFF;
+$blackLight:#898B8E;
+$boxShadow: 0px 6px 16px rgba(165, 155, 151, 0.19);
+
+
+
+
+
+//typography
+
+h1{};
+h2{
+    font-size: 3rem;
+    font-family: $font-family;
+    font-weight: weight(regular)
+};
+h3{};
+p{
+    font-size: 2rem;
+    font-family: $font-family;
+    font-weight: weight(regular)
+};
+
+
+//buttons style
+
+.btn {
+    font-size: 2.5rem!important;
+    font-weight: weight(medium)!important;
+    font-family: $font-family!important;
+    border-radius: 8px!important;
+    display: block!important;
+    text-align: center!important;
+    transition: all 0.2s;
+    width: 100%;
+
+   
+    &__primary{
+        background-color: $primary!important;
+        color:$white!important;
+        &:hover{
+            background-color: $primaryHover!important;
+        }
+    
+        
+
+    }
+    &__text{
+        color:$blackLight!important;
+        font-size:3rem;
+        display: flex;
+        align-items: center;
+        display: inline;
+    }
+}
+
+
+//general style overrides
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+//overriding material ui styles
+
+.MuiInputBase-input{
+    font-family: $font-family!important;
+    color:$black!important;
+    font-size:2rem!important;
+}
+     //disabled button 
+     .MuiButtonBase-root.Mui-disabled {
+        cursor: default;
+        pointer-events: none;
+        background: #B8B9BB !important;
+    }
+    .MuiButtonBase-root.MuiListItem-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiListItem-gutters.MuiListItem-button {
+        font-family: $font-family!important;
+    }

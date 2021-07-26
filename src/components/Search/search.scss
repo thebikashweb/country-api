@@ -1,0 +1,21 @@
+@import '../../styles/base';
+
+.search-box{
+background-color: $grey;
+border-radius: 30px;
+height:50px;
+display: flex;
+align-items: center;
+padding:1rem 3rem;
+&__wrapper{
+    display: flex;
+    align-items: center;
+    svg.MuiSvgIcon-root {
+        font-size: 4rem;
+        color:$black;
+    }    
+
+}
+
+
+}
