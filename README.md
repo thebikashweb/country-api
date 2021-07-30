@@ -1,7 +1,7 @@
 ## Country Store 
 A web app that lists countries in the world. List of countries is fetched from https://restcountries.eu/ 
 
-## [Video Tutorial](https://www.youtube.com/channel/UCKtcuEBjG-8T1HDrpuAprww/featured)
+## [Video Tutorial](https://youtu.be/gQACsKc7hYc)
 
 ### Tasks 
 
