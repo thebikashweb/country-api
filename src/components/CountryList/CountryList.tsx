@@ -118,7 +118,7 @@ const CountryList=()=> {
     const searchKeyword=useSelector((state:AppState)=>state.uiReducer.searchKeyWord)
     React.useEffect(()=>{
         
-        const _tempCountries:[]=countries.filter((country)=>country.name.toLowerCase().includes(searchKeyword.toLowerCase()))as []
+        const _tempCountries:[]=countries.filter((country)=>country.name.toLowerCase().includes(searchKeyword?.toLowerCase()))as []
         setFilteredCountries(_tempCountries)
     },[searchKeyword, countries])
 
