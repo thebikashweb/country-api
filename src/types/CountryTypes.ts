@@ -9,18 +9,27 @@ export type CountryReducerState={
     isLoading:boolean, 
     error:string
 }
+//langauge type
+interface LanguagesType { [key: string]: string; }
 
+//country state
 export type CountryState={
-    name:string 
+    name: {
+        common: string,
+        official:string
+    }
     region:string 
     subregion:string
     population:number 
-    nativeName:string
-    flag:string
-    capital:string
-    languages:[{name:string}]
+    flags: {
+        png:string
+    }
+    capital:string[]
+    languages:LanguagesType
 
 }
+
+
 
 //action types
 export type FetchAllCountriesLoadingAction={
